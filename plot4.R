@@ -9,7 +9,7 @@ getDataFiles()
 loadData()
 
 # plotCode
-png(file = "plot4.png",width = 480, height = 480)
+png(file = "plot4.png",width = 480, height = 480, bg="transparent") 
 par(mfcol= c(2,2))
 plot(data$V2,data$V3, type="l",ylab = "Global Active Power",xlab="")
 plot(data$V2,data$V7, type="l",ylab = "Energy sub metering",xlab="")

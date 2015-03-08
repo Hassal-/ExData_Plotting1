@@ -8,8 +8,8 @@ getDataFiles()
 # Read files for 2007-02-01 and 2007-02-02 dates only
 loadData()
 
-# plotCode
-png(file = "plot3.png",width = 480, height = 480)
+# plotCode 
+png(file = "plot3.png",width = 480, height = 480, bg="transparent") 
 plot(data$V2,data$V7, type="l",ylab = "Energy sub metering",xlab="")
 points(data$V2,data$V8, type="l",col="red")
 points(data$V2,data$V9, type="l",col="blue")

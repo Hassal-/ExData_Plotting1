@@ -8,7 +8,7 @@ getDataFiles()
 # Read files for 2007-02-01 and 2007-02-02 dates only
 loadData()
 
-# plotCode
-png(file = "plot2.png",width = 480, height = 480)
+# plotCode 
+png(file = "plot2.png",width = 480, height = 480, bg="transparent") 
 plot(data$V2,data$V3, type="l",ylab = "Global Active Power (kilowatts)",xlab="")
 dev.off() 

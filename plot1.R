@@ -9,6 +9,6 @@ getDataFiles()
 loadData()
 
 # plotCode
-png(file = "plot1.png",width = 480, height = 480)
+png(file = "plot1.png",width = 480, height = 480,bg="transparent") 
 hist(data$V3, xlab = "Global Active Power (kilowatts)", main="Global Active Power", col="red")
 dev.off() 
